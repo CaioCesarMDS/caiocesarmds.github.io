@@ -1,3 +1,5 @@
+
+/* Color for light mode */
 body.light {
     background-color: var(--tertiary-color);
 }
@@ -36,21 +38,58 @@ body.light .mobile-menu div {
     background-color: var(--secondary-color);
 }
 
-.text-center {
-    text-align: center;
+/* Tab navigation */
+.logo:focus-within {
+    scale: 1.1;
 }
 
-.paragraph {
-    line-height: 1.7em;
-    letter-spacing: 1.6px;
+body.light .menu a:focus {
+    color: var(--secondary-color);
 }
 
-.button-alert-color {
-    background-color: var(--primary-color);
+.menu:hover .item-menu a , .menu .item-menu a:focus {
+    color: var(--tertiary-color);
 }
 
-.disabled {
-    display: none;
+.social-medias a:focus i {
+    animation: icons 0.4s step-start infinite;
 }
+
+.curriculum:focus-within {
+    box-shadow: 5px 5px 0 0 var(--quartenary-color);
+        transform: translate(-5px, -5px);
+}
+
+.categories button:focus {
+    background-color: #324149;
+}
+
+body.light .categories button:focus {
+    background-color: #e2e1e1;
+}
+
+.project-img img:focus {
+    transform: scale(1.05);
+}
+
+.links-icons a:focus {
+    color: var(--primary-color);
+}
+
+.light-mode:focus-within  {
+    border: 2px solid var(--primary-color);
+}
+
+.submit-btn button#btn-sendmail:focus {
+    animation: buttonAnimation 0.3s ease both;
+}
+
+.footer-info picture:focus-within  {
+    transform: scale(1.1);
+}
+
+
+
+
 
 

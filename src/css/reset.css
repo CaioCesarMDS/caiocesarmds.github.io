@@ -58,3 +58,20 @@ p {
     color: var(--tertiary-color);
     font-size: 1.2em;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.7em;
+    letter-spacing: 1.6px;
+}
+
+.disabled {
+    display: none;
+}
+
+.button-alert-color {
+    background-color: var(--primary-color);
+}

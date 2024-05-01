@@ -21,7 +21,6 @@ function openCloseMenu() {
     menu.classList.contains("active")
         ? menu.classList.remove("active")
         : menu.classList.add("active");
-    animationMenu();
     blurPage();
     menuIconAnimation();
 }
@@ -32,11 +31,3 @@ function menuIconAnimation() {
     });
 }
 
-function animationMenu() {
-    itemMenu.forEach((link, i) => {
-        link.style.animation
-            ? (link.style.animation = "")
-            : (link.style.animation = `itemMenuAnimation 0.5s ease forwards
-            ${i / 7 + 0.3}s`);
-    });
-}

@@ -31,21 +31,17 @@ header {
     justify-content: space-between;
 }
 
+.menu .item-menu a {
+    color: var(--primary-color);
+}
+
+.menu .item-menu a:hover {
+    color: var(--primary-color);
+}
+
 .item-menu {
     margin: 0 1.5em;
     font-size: 1.5em;
-}
-
-.item-menu a {
-    color: var(--primary-color);
-}
-
-.menu:hover a {
-    color: var(--tertiary-color);
-}
-
-.item-menu a:hover {
-    color: var(--primary-color);
 }
 
 .item-menu a::before {
@@ -181,8 +177,7 @@ header {
 }
 
 .curriculum:hover {
-    box-shadow: 5px 5px 0 0 var(--quartenary-color);
-    transform: translate(-5px, -5px);
+    animation: buttonAnimation 0.3s ease both;
 }
 
 .curriculum a {
@@ -259,6 +254,7 @@ header {
 }
 
 .project-img {
+    height: 240px;
     overflow: hidden;
 }
 

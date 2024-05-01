@@ -74,6 +74,5 @@ body.light .input-field {
 }
 
 .submit-btn button#btn-sendmail:hover {
-    box-shadow: 5px 5px 0 0 var(--quartenary-color);
-    transform: translate(-5px, -5px);
+    animation: buttonAnimation 0.3s ease both;
 }
