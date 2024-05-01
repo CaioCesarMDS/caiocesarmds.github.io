@@ -1,0 +1,56 @@
+body.light {
+    background-color: var(--tertiary-color);
+}
+
+body.light p,
+body.light h1,
+body.light h2,
+body.light h3,
+body.light .upLetter,
+body.light .menu:hover a,
+body.light .project .links-icons a {
+    color: var(--secondary-color);
+}
+
+body.light .developer .upLetter,
+body.light .item-menu a:hover,
+body.light .project .links-icons a:hover {
+    color: var(--primary-color);
+}
+
+body.light .project,
+body.light .input,
+body.light .textarea {
+    background-color: var(--senary-color);
+}
+
+body.light .categories button {
+    background-color: var(--tertiary-color);
+}
+
+body.light .categories button:hover {
+    background-color: #e2e1e1;
+}
+
+body.light .mobile-menu div {
+    background-color: var(--secondary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.7em;
+    letter-spacing: 1.6px;
+}
+
+.button-alert-color {
+    background-color: var(--primary-color);
+}
+
+.disabled {
+    display: none;
+}
+
+

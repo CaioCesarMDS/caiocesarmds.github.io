@@ -1,0 +1,405 @@
+@media screen and (max-width: 1380px) {
+    .projects {
+        margin-bottom: 6em;
+    }
+
+    .all-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        width: 500px;
+        height: 380px;
+    }
+
+    .project img {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 2.4em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+
+    p,
+    .paragraph {
+        font-size: 1em;
+    }
+
+    .logo {
+        left: -3em;
+    }
+
+    .menu {
+        right: 5em;
+    }
+
+    .item-menu {
+        font-size: 1.5em;
+    }
+
+    .icons {
+        width: 3em;
+    }
+
+    .checkbox:checked + .icons .ball {
+        transform: translateX(22px);
+    }
+
+    .upLetter {
+        font-size: 2.3em;
+    }
+
+    #line {
+        width: 4em;
+        margin: 1.4em 0 0 8em;
+    }
+
+    .img-home img {
+        width: 390px;
+    }
+
+    .about {
+        padding: 40px;
+    }
+
+    .img-about img {
+        width: 370px;
+    }
+
+    .project {
+        width: 440px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body.light .menu {
+        background-color: #e2e1e1;
+    }
+
+    main.blur {
+        filter: blur(3px);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #364750ff;
+        flex-direction: column;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .menu.open.active {
+        transform: translate(0);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu .item-menu a {
+        position: relative;
+        display: flex;
+        transform: translate(1000%);
+    }
+
+    .menu.active .item-menu a {
+        transition: transform 1s ease;
+        transform: translate(0);
+    }
+
+    .menu.active .item-menu.disabled a{
+        transition: transform 0.9s ease;
+    }
+
+    .item-menu.disabled {
+        display: block;
+    }
+
+    .light-mode {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .upLetters {
+        padding-left: 2em;
+    }
+
+    .img-home, .img-home img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .all-projects {
+        column-gap: 0;
+        row-gap: 2em;
+    }
+
+    .project {
+        width: 410px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .about {
+        padding: 20px;
+    }
+
+    .skills {
+        padding: 0;
+    }
+
+    .container-slider {
+        margin: 0;
+    }
+
+    .slider .item img {
+        width: 280px;
+    }
+
+    .all-projects {
+        column-gap: 2em;
+    }
+
+    .project {
+        padding-bottom: 6em;
+        width: 340px;
+        height: 300px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .project-img img {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home {
+        margin-top: 7em;
+        display: block;
+    }
+
+    .img-home {
+        margin: 0 0 6em 18em;
+    }
+
+    .img-home img {
+        width: 360px;
+    }
+
+    .upLetter {
+        font-size: 2.5em;
+    }
+
+    .img-home img {
+        margin: 0;
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .apresentation {
+        flex-direction: column-reverse;
+    }
+
+    .about-me {
+        width: 80%;
+        margin: 0;
+    }
+
+    .img-about {
+        margin: 6em 6em 2em 6em;
+    }
+
+    .img-about img {
+        width: 340px;
+    }
+
+    .container-slider {
+        width: 15em;
+    }
+
+    .slider .item img {
+        width: 200px;
+    }
+
+    .footer-info .social-medias {
+        margin-top: 0;
+    }
+
+    #copy {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .upLetters {
+        width: 100%;
+    }
+
+    #line {
+        width: 4em;
+        margin: 1.7em 0 0 9em;
+    }
+
+    .all-projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project {
+        width: 400px;
+        height: 320px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .project-img img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .stars span i {
+        display: none;
+    }
+
+    .upLetter {
+        font-size: 2.6em;
+    }
+
+    .img-home {
+        margin: 0 0 0 12em;
+    }
+
+    .img-home img {
+        width: 350px;
+    }
+
+    .about {
+        padding-top: 0;
+    }
+
+    .about-me {
+        width: 90%;
+    }
+
+    .img-about img {
+        width: 300px;
+    }
+
+    .slider .item img {
+        width: 140px;
+        margin-left: 3em;
+    }
+
+    .all-projects {
+        row-gap: 4em;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .skills-explanation {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .img-home {
+        margin: 0 0 0 8em;
+    }
+
+    .input-field {
+        width: 350px;
+    }
+
+    .project {
+        width: 340px;
+        height: 300px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .project-img img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .contact h2 {
+        margin-left: 1em;
+    }
+
+    .contact h3 {
+        margin-left: 1.8em;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .upLetter {
+        font-size: 2.4em;
+    }
+
+    .img-home {
+        margin: 2em 0 0 2em;
+    }
+
+    #line {
+        margin: 1.7em 0 0 8em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .about {
+        padding-top: 10em;
+    }
+}
