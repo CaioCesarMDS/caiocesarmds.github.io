@@ -76,10 +76,6 @@ body.light .categories button:focus {
     color: var(--primary-color);
 }
 
-.light-mode:focus-within  {
-    border: 2px solid var(--primary-color);
-}
-
 .submit-btn button#btn-sendmail:focus {
     animation: buttonAnimation 0.3s ease both;
 }
