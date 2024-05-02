@@ -1,3 +1,29 @@
+@media screen and (max-width: 1920px) {
+    .home {
+        padding: 40px 40px 0 40px;
+        height: 70vh;
+    }
+
+    .about {
+        padding: 40px 40px 0 40px;
+        height: 60vh;
+    }
+
+    .skills {
+        padding: 40px 40px 0 40px;
+        height: 60vh;
+    }
+
+    .projects {
+        padding: 40px 40px 0 40px;
+        height: 60vh;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
 @media screen and (max-width: 1380px) {
     .projects {
         margin-bottom: 6em;
@@ -218,6 +244,7 @@
     .home {
         margin-top: 7em;
         display: block;
+        height: 100%;
     }
 
     .img-home {
