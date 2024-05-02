@@ -1,81 +1,6 @@
-@media screen and (max-width: 1920px) {
-    .logo {
-        transform: scale(0.5);
-    }
-
-    .menu .item-menu a {
-        font-size: 1.3em;
-    }
-
-    .icons {
-        transform: scale(1.4);
-    }
-
-    .home {
-        padding: 40px 40px 0 40px;
-        height: 70vh;
-    }
-
-    .about {
-        padding: 40px 40px 0 40px;
-        height: 60vh;
-    }
-
-    .skills {
-        padding: 40px 40px 0 40px;
-        height: 60vh;
-    }
-
-    .projects {
-        padding: 40px 40px 0 40px;
-        height: 60vh;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-}
-
 @media screen and (max-width: 1380px) {
-    .logo {
-        transform: scale(0.4);
-    }
-
-    .menu .item-menu a {
-        font-size: 1.1em;
-    }
-
-    .icons {
-        transform: scale(1.2);
-    }
-
-    .home {
-        height: 90vh;
-        padding: 20px 20px 0 20px;
-    }
-
-    .about {
-        height: 80vh;
-        padding: 20px 20px 0 20px;
-    }
-
-    .skills {
-        height: 70vh;
-        padding: 20px 20px 0 20px;
-    }
-
     .projects {
-        padding: 20px 20px 0 20px;
-        height: 100vh;
-    }
-
-    .contact, .footer {
-        height: 100%;
-    }
-
-    .projects {
-        height: 100vh;
-        margin-bottom: 10em;
+        margin-bottom: 6em;
     }
 
     .all-projects {
@@ -134,29 +59,17 @@
         transform: translateX(22px);
     }
 
-    .name {
-        width: 100%;
-    }
-
-    .expertise {
-        width: 100%;
-    }
-
     .upLetter {
-        font-size: 2.6em;
+        font-size: 2.3em;
     }
 
     #line {
         width: 4em;
-        margin: 1.8em 0 0 10em;
+        margin: 1.4em 0 0 8em;
     }
 
     .img-home img {
         width: 390px;
-    }
-
-    .img-home {
-        margin-right: 56px;
     }
 
     .about {
@@ -165,19 +78,6 @@
 
     .img-about img {
         width: 370px;
-    }
-
-    .home {
-        height: 70vh;
-        padding: 0;
-    }
-
-    .projects {
-        height: 70vh;
-    }
-
-    .skills {
-        height: 50vh;
     }
 
     .project {
