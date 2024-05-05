@@ -41,22 +41,22 @@ ul {
 
 h2 {
     color: var(--primary-color);
-    font-size: 2.6em;
+    font-size: 2.5em;
 }
 
 h3 {
     color: var(--primary-color);
-    font-size: 2em;
+    font-size: 1.9em;
 }
 
 h4 {
     color: var(--primary-color);
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 p {
     color: var(--tertiary-color);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .text-center {

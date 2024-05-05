@@ -4,12 +4,11 @@
 @import "./slider.css";
 @import "./contact.css";
 @import "./config.css";
-@import "./stars-background.css";
 @import "./mobilemenuicon.css";
 
 header {
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,6 +26,7 @@ header {
 }
 
 .menu {
+    right: 1em;
     display: flex;
     justify-content: space-between;
 }
@@ -65,72 +65,50 @@ header {
 }
 
 .home {
-    width: 100%;
+    margin-top: 12em;
+    padding: 0 5em 0 5em;
     display: flex;
-    height: 100vh;
-    gap: 5em;
     align-items: center;
     justify-content: space-between;
 }
 
-.img-home {
-    margin-right: 5em;
-}
-
 .img-home img {
-    margin: 8em 0 0 7em;
     animation: lightUp 5s infinite;
     animation-delay: 3s;
 }
 
-.upLetters {
-    width: 50%;
-    padding: 4em 0 0 3.5em;
-}
-
-.upLetter {
+.floating-letter {
     font-size: 3.3em;
     color: var(--tertiary-color);
     font-weight: 400;
     display: inline-block;
-    margin: auto 0;
-    height: 45px;
     cursor: pointer;
-    line-height: 2em;
+    line-height: 1.3em;
 }
 
-.upLetter:hover,
-#line:hover {
+.floating-letter:hover,
+.point:hover {
     animation: up 0.7s infinite alternate;
 }
 
-.line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#line {
-    position: absolute;
-    margin: 2.6em 0 0 12em;
-    width: 6em;
-    height: 3px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
+.point {
+    margin-left: 5px;
+    display: inline-block;
     cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
-.developer .upLetter {
+.developer .floating-letter {
     color: var(--primary-color);
+    font-family: Roboto Mono, monospace;
 }
 
 .about {
-    padding: 5em;
-    height: 100vh;
-    margin-bottom: 3em;
-}
-
-.apresentation {
+    margin-top: 10em;
+    padding: 0 3em 0 3em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -171,6 +149,7 @@ header {
     background-color: var(--primary-color);
     text-align: center;
     border-radius: 0.2em;
+    cursor: pointer;
     font-size: 1.3em;
     font-weight: 600;
     transition: box-shadow 0.3s, transform 0.3s;
@@ -181,25 +160,24 @@ header {
 }
 
 .curriculum a {
+    font-family: Roboto Mono;
     color: var(--quartenary-color);
 }
 
 .skills {
-    padding: 5em 3em;
-    height: 100vh;
-    margin-bottom: 3em;
+    margin-top: 10em;
+    padding: 0 5em 0 5em;
 }
 
 .skills-container {
     display: flex;
-    width: 100%;
+    margin-top: 4em;
     align-items: center;
     justify-content: space-around;
-    margin-top: 3em;
 }
 
-.skills-explanation {
-    width: 45%;
+.skills-text {
+    width: 40%;
 }
 
 .categories {
@@ -223,6 +201,9 @@ header {
 }
 
 .categories button p {
+    font-family: Roboto Mono;
+    font-size: 1.2em;
+    font-weight: 500;
     color: var(--primary-color);
 }
 
@@ -230,19 +211,54 @@ header {
     border-left: 3px solid var(--primary-color);
 }
 
+.skills-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.skill-name {
+    top: 0.5em;
+    text-align: center;
+}
+
+body.light .skill-name p {
+    color:var(--senary-color);
+}
+
+.name-container {
+    width: 12em;
+    margin: 0 4em 0 0;
+    display: block;
+    background-color: #425761;
+    height: 2.5em;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.name-container::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #425761 transparent transparent;
+}
+
 .projects {
-    height: 100%;
-    margin-bottom: 3em;
+    margin-top: 10em;
 }
 
 .all-projects {
     display: grid;
+    margin-top: 4em;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
-    width: 100%;
     justify-items: center;
-    margin-top: 3em;
 }
 
 .project {
@@ -254,13 +270,12 @@ header {
 }
 
 .project-img {
-    height: 240px;
+    height: 250px;
     overflow: hidden;
 }
 
 .project-img img {
     width: 100%;
-    height: 240px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -290,12 +305,12 @@ header {
     color: var(--primary-color);
 }
 
-.tecnologies-used {
+.technologies-used {
     display: flex;
     gap: 0.1em;
 }
 
-.tecnologies-used p {
+.technologies-used p {
     font-family: Roboto Mono, monospace;
     font-size: 0.8em;
 }
@@ -316,18 +331,25 @@ header {
     color: var(--primary-color);
 }
 
+.contact {
+    margin-top: 10em;
+}
+
 .contact form {
-    margin-top: 100px;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
     padding-bottom: 5em;
 }
 
 .contact h2 {
     margin-left: 3em;
     letter-spacing: 0.1em;
+}
+
+body.light .contact h2 {
+    color: var(--primary-color);
 }
 
 .contact h3 {

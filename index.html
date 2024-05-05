@@ -11,7 +11,7 @@
 
         <!-- Css files -->
         <link rel="stylesheet" href="./src/css/styles.css" />
-        <link rel="stylesheet" href="./src/css/responsice.css" />
+        <link rel="stylesheet" href="./src/css/responsive.css" />
         <link rel="stylesheet" href="./src/css/reset.css" />
 
         <!-- JavaScript files -->
@@ -40,211 +40,197 @@
     </head>
 
     <body class="body">
-        <div class="star-container">
-            <div class="stars">
-                <span style="--i: 1"><i class="fa-solid fa-star"></i> </span>
-                <span style="--i: 2"> <i class="fa-solid fa-star"></i></span>
-                <span style="--i: 1.5"><i class="fa-solid fa-star"></i> </span>
-                <span style="--i: 3"><i class="fa-solid fa-star"></i> </span>
-                <span style="--i: 2.5"><i class="fa-solid fa-star"></i> </span>
+        <header>
+            <div class="logo">
+                <picture>
+                    <a href="/">
+                        <img
+                            src="./src/images/logo.png"
+                            alt="logo"
+                            width="250"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                        />
+                    </a>
+                </picture>
             </div>
-            <header>
-                <div class="logo">
+            <nav>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="menu open">
+                    <li class="item-menu">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li class="item-menu disabled">
+                        <a href="#skills">Habilidades</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#projects">Projetos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="light-mode" data-aos="fade-left" data-aos-delay="300">
+                <input type="checkbox" class="checkbox" id="check" />
+                <label for="check" class="icons">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="floating-letters" data-aos="flip-up" data-aos-delay="1500">
+                    <div class="name">
+                        <span class="floating-letter">E</span>
+                        <span class="floating-letter">u</span>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="floating-letter">s</span>
+                        <span class="floating-letter">o</span>
+                        <span class="floating-letter">u</span>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="floating-letter">C</span>
+                        <span class="floating-letter">a</span>
+                        <span class="floating-letter">i</span>
+                        <span class="floating-letter">o</span>
+                        <br/>
+                        <span class="space"></span>
+                        <span class="floating-letter">C</span>
+                        <span class="floating-letter">e</span>
+                        <span class="floating-letter">s</span>
+                        <span class="floating-letter">a</span>
+                        <span class="floating-letter">r</span>
+                        <span class="point"></span>
+                    </div>
+                    <br />
+                    <div class="occupation">
+                        <div class="developer">
+                            <span class="floating-letter">D</span>
+                            <span class="floating-letter">e</span>
+                            <span class="floating-letter">s</span>
+                            <span class="floating-letter">e</span>
+                            <span class="floating-letter">n</span>
+                            <span class="floating-letter">v</span>
+                            <span class="floating-letter">o</span>
+                            <span class="floating-letter">l</span>
+                            <span class="floating-letter">v</span>
+                            <span class="floating-letter">e</span>
+                            <span class="floating-letter">d</span>
+                            <span class="floating-letter">o</span>
+                            <span class="floating-letter">r</span>
+                        </div>
+                        <span class="floating-letter">W</span>
+                        <span class="floating-letter">e</span>
+                        <span class="floating-letter">b</span>
+                        <span class="point"></span>
+                    </div>
+                </div>
+                <div class="img-home">
                     <picture>
-                        <a href="/">
-                            <img
-                                src="./src/images/logo.png"
-                                alt="logo"
-                                width="250"
-                                data-aos="fade-right"
-                                data-aos-delay="300"
-                            />
-                        </a>
+                        <img
+                            data-aos="fade-left"
+                            data-aos-delay="1500"
+                            src="./src/images/home.svg"
+                            alt="image-home"
+                            width="420"
+                        />
                     </picture>
                 </div>
-                <nav data-aos="fade-down" data-aos-delay="1000">
-                    <div class="mobile-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                    <ul class="menu open" >
-                        <li class="item-menu">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="item-menu">
-                            <a href="#about">Sobre</a>
-                        </li>
-                        <li class="item-menu disabled">
-                            <a href="#skills">Habilidades</a>
-                        </li>
-                        <li class="item-menu">
-                            <a href="#projects">Projetos</a>
-                        </li>
-                        <li class="item-menu">
-                            <a href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="light-mode" data-aos="fade-down" data-aos-delay="1000">
-                    <input type="checkbox" class="checkbox" id="check"  />
-                    <label for="check" class="icons">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
-                    </label>
+            </section>
+            <section class="about" id="about">
+                <div class="img-about" data-aos="fade-down" data-aos-delay="500">
+                    <picture>
+                        <img
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            src="./src/images/programming.svg"
+                            alt="image-about-me"
+                            width="400"
+                        />
+                    </picture>
                 </div>
-            </header>
-            <main>
-                <section class="home" id="home">
-                    <div class="upLetters" data-aos="flip-up" data-aos-delay="1500">
-                        <div class="name">
-                            <div class="upLetter">E</div>
-                            <div class="upLetter">u</div>
-                            &nbsp; &nbsp; &nbsp; &nbsp;
-                            <div class="upLetter">s</div>
-                            <div class="upLetter">o</div>
-                            <div class="upLetter">u</div>
-                            &nbsp; &nbsp; &nbsp; &nbsp;
-                            <div class="upLetter">C</div>
-                            <div class="upLetter">a</div>
-                            <div class="upLetter">i</div>
-                            <div class="upLetter">o</div>
-                            <br />
-                            <div class="line">
-                                <div>
-                                    <div class="upLetter">C</div>
-                                    <div class="upLetter">e</div>
-                                    <div class="upLetter">s</div>
-                                    <div class="upLetter">a</div>
-                                    <div class="upLetter">r</div>
-                                </div>
-                                <div
-                                    id="line"
-                                    data-aos="fade-up"
-                                    data-aos-delay="1600"
-                                ></div>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="expertise">
-                            <div class="upLetter">U</div>
-                            <div class="upLetter">m</div>
-                            &nbsp; &nbsp; &nbsp; &nbsp;
-                            <div class="developer">
-                                <div class="upLetter">D</div>
-                                <div class="upLetter">e</div>
-                                <div class="upLetter">s</div>
-                                <div class="upLetter">e</div>
-                                <div class="upLetter">n</div>
-                                <div class="upLetter">v</div>
-                                <div class="upLetter">o</div>
-                                <div class="upLetter">l</div>
-                                <div class="upLetter">v</div>
-                                <div class="upLetter">e</div>
-                                <div class="upLetter">d</div>
-                                <div class="upLetter">o</div>
-                                <div class="upLetter">r</div>
-                            </div>
-                            <div class="upLetter">W</div>
-                            <div class="upLetter">e</div>
-                            <div class="upLetter">b</div>
-                        </div>
-                    </div>
-                    <div class="img-home">
-                        <picture>
-                            <img
-                                data-aos="fade-left"
-                                data-aos-delay="1500"
-                                src="./src/images/home.svg"
-                                alt="image-home"
-                                width="420"
-                            />
-                        </picture>
-                    </div>
-                </section>
-                <section class="about" id="about">
-                    <div class="apresentation">
-                        <div class="img-about" data-aos="fade-down" data-aos-delay="500">
-                            <picture>
-                                <img
-                                    data-aos="fade-left"
-                                    data-aos-delay="500"
-                                    src="./src/images/programming.svg"
-                                    alt="image-about-me"
-                                    width="400"
-                                />
-                            </picture>
-                        </div>
-                        <div class="about-me" data-aos="fade-up" data-aos-delay="500">
-                            <h2>Quem sou eu?</h2>
-                            <p class="paragraph">
-                                Tenho 19 anos, moro em Recife-PE e atualmente estou
-                                cursando Análise e Desenvolvimento de Sistemas (ADS).
-                                Tenho interesse particular no Front-End, onde tenho me
-                                concentrado recentemente. No entanto, estou sempre aberto
-                                a explorar novas áreas e adquirir conhecimentos
-                                adicionais. Também tenho planos de expandir meu domínio
-                                para o Back-End no futuro, demonstrando minha dedicação em
-                                evoluir constantemente na minha jornada profissional.
-                            </p>
-                            <div class="social-medias">
-                                <a
-                                    href="http://www.github.com/CaioCesarMDS" title="GitHub"
-                                    target="_blank"
-                                >
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/caio-cesar-aa935425a/"
-                                    target="_blank" title="LinkedIn"
-                                >
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                                <a href="mailto:caiocesarsts@gmail.com" target="_blank" title="E-mail">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </div>
-                            <div class="curriculum" >
-                                <a
-                                    href="./src/pdf/curriculum.pdf"
-                                    download="CaioCesar_CV.pdf"
-                                    target="_blank" title="Curriculum Vitae"
-                                >
-                                    Curriculum Vitae
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="skills" id="skills">
-                    <h2 class="text-center">Habilidades</h2>
-                    <div class="skills-container">
-                        <div
-                            class="skills-explanation"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                <div class="about-me" data-aos="fade-up" data-aos-delay="500">
+                    <h2>Quem sou eu?</h2>
+                    <p class="paragraph">
+                        Tenho 19 anos, moro em Recife-PE e atualmente estou cursando
+                        Análise e Desenvolvimento de Sistemas (ADS). Tenho interesse
+                        particular no Front-End, onde tenho me concentrado recentemente.
+                        No entanto, estou sempre aberto a explorar novas áreas e adquirir
+                        conhecimentos adicionais. Também tenho planos de expandir meu
+                        domínio para o Back-End no futuro, demonstrando minha dedicação em
+                        evoluir constantemente na minha jornada profissional.
+                    </p>
+                    <div class="social-medias">
+                        <a
+                            href="http://www.github.com/CaioCesarMDS"
+                            title="GitHub"
+                            target="_blank"
                         >
-                            <div>
-                                <p class="paragraph">
-                                    &nbsp;&nbsp;&nbsp;Aqui estão algumas das habilidades
-                                    que adquiri ao longo do tempo. Estou sempre em busca
-                                    de aprimorar minhas habilidades e aprender novas
-                                    tecnologias para me tornar um desenvolvedor mais
-                                    completo.
-                                </p>
-                            </div>
-                            <div class="categories">
-                                <button class="active" value="languages" tabindex="0" >
-                                    <p>Linguagens e Bancos de dados</p>
-                                </button>
-                                <button value="frameworks" tabindex="0" >
-                                    <p>Frameworks e Tecnologias</p>
-                                </button>
-                                <button value="tools" tabindex="0">
-                                    <p>Ferramentas e plataformas</p>
-                                </button>
-                            </div>
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/caio-cesar-aa935425a/"
+                            target="_blank"
+                            title="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a
+                            href="mailto:caiocesarsts@gmail.com"
+                            target="_blank"
+                            title="E-mail"
+                        >
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="curriculum">
+                        <a
+                            href="./src/pdf/curriculum.pdf"
+                            download="CaioCesar_CV.pdf"
+                            target="_blank"
+                            title="Curriculum Vitae"
+                        >
+                            Curriculum Vitae
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="text-center">Habilidades</h2>
+                <div class="skills-container">
+                    <div class="skills-text" data-aos="fade-up" data-aos-delay="600">
+                        <div>
+                            <p class="paragraph">
+                                &nbsp;&nbsp;&nbsp;Aqui estão algumas das habilidades que
+                                adquiri ao longo do tempo. Estou sempre em busca de
+                                aprimorar minhas habilidades e aprender novas tecnologias
+                                para me tornar um desenvolvedor mais completo.
+                            </p>
+                        </div>
+                        <div class="categories">
+                            <button class="active" value="languages" tabindex="0">
+                                <p>Linguagens e Bancos de dados</p>
+                            </button>
+                            <button value="frameworks" tabindex="0">
+                                <p>Frameworks e Tecnologias</p>
+                            </button>
+                            <button value="tools" tabindex="0">
+                                <p>Ferramentas e plataformas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="skills-name">
+                        <div class="name-container">
+                            <span class="skill-name"><p></p></span>
                         </div>
                         <div
                             class="container-slider"
@@ -252,7 +238,7 @@
                             data-aos-delay="500"
                         >
                             <div class="slider">
-                                <div class="item languages">
+                                <div class="item languages" id="Javascript">
                                     <picture>
                                         <img
                                             src="./src/images/skills/javascript.svg"
@@ -260,7 +246,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item languages">
+                                <div class="item languages" id="Typescript">
                                     <picture>
                                         <img
                                             src="./src/images/skills/typescript.svg"
@@ -268,7 +254,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item languages">
+                                <div class="item languages" id="HTML">
                                     <picture>
                                         <img
                                             src="./src/images/skills/html-5.svg"
@@ -276,7 +262,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item languages">
+                                <div class="item languages" id="CSS">
                                     <picture>
                                         <img
                                             src="./src/images/skills/css-3.svg"
@@ -284,7 +270,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item frameworks">
+                                <div class="item frameworks" id="Sass">
                                     <picture>
                                         <img
                                             src="./src/images/skills/sass.svg"
@@ -292,7 +278,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item frameworks">
+                                <div class="item frameworks" id="Tailwind">
                                     <picture>
                                         <img
                                             src="./src/images/skills/tailwind.svg"
@@ -300,7 +286,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item frameworks">
+                                <div class="item frameworks" id="Bootstrap">
                                     <picture>
                                         <img
                                             src="./src/images/skills/bootstrap.svg"
@@ -308,7 +294,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item frameworks">
+                                <div class="item frameworks" id="React">
                                     <picture>
                                         <img
                                             src="./src/images/skills/react.svg"
@@ -316,7 +302,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item tools">
+                                <div class="item tools" id="Figma">
                                     <picture>
                                         <img
                                             src="./src/images/skills/figma.svg"
@@ -324,7 +310,7 @@
                                         />
                                     </picture>
                                 </div>
-                                <div class="item tools">
+                                <div class="item tools" id="Git">
                                     <picture>
                                         <img
                                             src="./src/images/skills/git.svg"
@@ -335,303 +321,304 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section
-                    class="projects"
-                    id="projects"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                >
-                    <h2 class="text-center">Projetos</h2>
-                    <div class="all-projects">
-                        <div class="project">
-                            <div class="project-img">
-                                <picture>
-                                    <img
-                                        src="./src/images/projects/foodmenuonline.png"
-                                        alt="foodmenuonline image" tabindex="0"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-info">
-                                    <div class="tecnologies-used">
-                                        <p>JavaScript</p>
-                                        <p>|</p>
-                                        <p>React</p>
-                                        <p>|</p>
-                                        <p>SQLite</p>
-                                    </div>
-                                    <div class="project-name">
-                                        <p>Food | Menu Online</p>
-                                    </div>
-                                </div>
-                                <div class="links-icons">
-                                    <a
-                                        href="https://github.com/CaioCesarMDS/Food_Menu_Online"
-                                        target="_blank"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-github"
-                                        >
-                                            <path
-                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                                            ></path>
-                                        </svg>
-                                    </a>
-                                    <a id="disabled">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-external-link"
-                                        >
-                                            <path
-                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                                            ></path>
-                                            <polyline points="15 3 21 3 21 9"></polyline>
-                                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                </div>
+            </section>
+            <section
+                class="projects"
+                id="projects"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
+                <h2 class="text-center">Projetos</h2>
+                <div class="all-projects">
+                    <div class="project">
+                        <div class="project-img">
+                            <picture>
+                                <img
+                                    src="./src/images/projects/foodmenuonline.png"
+                                    alt="foodmenuonline image"
+                                    tabindex="0"
+                                />
+                            </picture>
                         </div>
-                        <div class="project">
-                            <div class="project-img">
-                                <picture>
-                                    <img
-                                        src="./src/images/projects/app-previsao-do-tempo.jpg"
-                                        alt="app-previsao-do-tempo image" tabindex="0"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-info">
-                                    <div class="tecnologies-used">
-                                        <p>JavaScript</p>
-                                        <p>|</p>
-                                        <p>HTML</p>
-                                        <p>|</p>
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="project-name">
-                                        <p>App de previsão do tempo</p>
-                                    </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <div class="technologies-used">
+                                    <p>JavaScript</p>
+                                    <p>|</p>
+                                    <p>React</p>
+                                    <p>|</p>
+                                    <p>SQLite</p>
                                 </div>
-                                <div class="links-icons">
-                                    <a
-                                        href="https://github.com/CaioCesarMDS/AppPrevisaoDoTempo"
-                                        target="_blank"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-github"
-                                        >
-                                            <path
-                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                                            ></path>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        href="https://app-previsao-do-tempo-nu.vercel.app/"
-                                        target="_blank"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-external-link"
-                                        >
-                                            <path
-                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                                            ></path>
-                                            <polyline points="15 3 21 3 21 9"></polyline>
-                                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                                        </svg>
-                                    </a>
+                                <div class="project-name">
+                                    <p>Food | Menu Online</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project">
-                            <div class="project-img">
-                                <picture>
-                                    <img
-                                        src="./src/images/projects/notesapp.jpg"
-                                        alt="notesapp image" tabindex="0"
-                                    />
-                                </picture>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-info">
-                                    <div class="tecnologies-used">
-                                        <p>TypeScript</p>
-                                        <p>|</p>
-                                        <p>React</p>
-                                    </div>
-                                    <div class="project-name">
-                                        <p>Notes App</p>
-                                    </div>
-                                </div>
-                                <div class="links-icons">
-                                    <a
-                                        href="https://github.com/CaioCesarMDS/NotesApp"
-                                        target="_blank"
+                            <div class="links-icons">
+                                <a
+                                    href="https://github.com/CaioCesarMDS/Food_Menu_Online"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-github"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-github"
-                                        >
-                                            <path
-                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                                            ></path>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        href="https://cc-notes-app.vercel.app/"
-                                        target="_blank"
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <a id="disabled">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-external-link"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            role="img"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            class="feather feather-external-link"
-                                        >
-                                            <path
-                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                                            ></path>
-                                            <polyline points="15 3 21 3 21 9"></polyline>
-                                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                                        </svg>
-                                    </a>
-                                </div>
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        ></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="contact" id="contact">
-                    <h2>Contato</h2>
-                    <h3>Contato</h3>
-                    <form data-aos="flip-right" data-aos-delay="400">
-                        <div class="input-field">
-                            <input
-                                class="input name"
-                                type="text"
-                                name="name"
-                                required
-                                autocomplete="off"
-                            />
-                            <label for="name" class="label">Nome (*):</label>
-                        </div>
-                        <div class="input-field">
-                            <input
-                                class="input email"
-                                type="text"
-                                name="email"
-                                required
-                                autocomplete="off"
-                            />
-                            <label for="email" class="label">E-mail (*):</label>
-                        </div>
-                        <div class="input-field">
-                            <input
-                                class="input phone"
-                                type="text"
-                                name="phone"
-                                autocomplete="off"
-                            />
-                            <label for="phone" class="label">Telefone:</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea
-                                class="textarea message"
-                                name="message"
-                                required
-                                autocomplete="off"
-                            >
-                            </textarea>
-                            <label for="message" class="label text"
-                                >Sua mensagem (*):</label
-                            >
-                        </div>
-                        <div class="submit-btn">
-                            <button
-                                id="btn-sendmail"
-                                type="submit"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                            >
-                                Enviar
-                            </button>
-                        </div>
-                    </form>
-                </section>
-                <section class="footer">
-                    <footer>
-                        <div class="footer-info">
+                    <div class="project">
+                        <div class="project-img">
                             <picture>
-                                <a href="/" >
-                                    <img
-                                        src="./src/images/logo.png"
-                                        alt="logo"
-                                        width="120px"
-                                    />
-                                </a>
+                                <img
+                                    src="./src/images/projects/app-previsao-do-tempo.jpg"
+                                    alt="app-previsao-do-tempo image"
+                                    tabindex="0"
+                                />
                             </picture>
-                            <div class="social-medias">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <div class="technologies-used">
+                                    <p>JavaScript</p>
+                                    <p>|</p>
+                                    <p>HTML</p>
+                                    <p>|</p>
+                                    <p>CSS</p>
+                                </div>
+                                <div class="project-name">
+                                    <p>App de previsão do tempo</p>
+                                </div>
+                            </div>
+                            <div class="links-icons">
                                 <a
-                                    href="http://www.github.com/CaioCesarMDS"
+                                    href="https://github.com/CaioCesarMDS/AppPrevisaoDoTempo"
                                     target="_blank"
-                                    title="GitHub"
                                 >
-                                    <i class="fa-brands fa-github"></i>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-github"
+                                    >
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                        ></path>
+                                    </svg>
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/in/caio-cesar-aa935425a/"
+                                    href="https://app-previsao-do-tempo-nu.vercel.app/"
                                     target="_blank"
                                 >
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                                <a href="mailto:caiocesarsts@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-external-link"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        ></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
-                        <div class="copyright">
-                            <span id="copy">
-                                <p>Todos os direitos reservados &copy; 2024</p>
-                            </span>
-                            <span id="me" class="text-center">
-                                <p>Desenvolvido por Caio Cesar 🚀</p>
-                            </span>
+                    </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <picture>
+                                <img
+                                    src="./src/images/projects/notesapp.jpg"
+                                    alt="notesapp image"
+                                    tabindex="0"
+                                />
+                            </picture>
                         </div>
-                    </footer>
-                </section>
-            </main>
-        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <div class="technologies-used">
+                                    <p>TypeScript</p>
+                                    <p>|</p>
+                                    <p>React</p>
+                                </div>
+                                <div class="project-name">
+                                    <p>Notes App</p>
+                                </div>
+                            </div>
+                            <div class="links-icons">
+                                <a
+                                    href="https://github.com/CaioCesarMDS/NotesApp"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-github"
+                                    >
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <a
+                                    href="https://cc-notes-app.vercel.app/"
+                                    target="_blank"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        class="feather feather-external-link"
+                                    >
+                                        <path
+                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                        ></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contato</h2>
+                <h3>Contato</h3>
+                <form data-aos="flip-right" data-aos-delay="400">
+                    <div class="input-field">
+                        <input
+                            class="input name"
+                            type="text"
+                            name="name"
+                            required
+                            autocomplete="off"
+                        />
+                        <label for="name" class="label">Nome (*):</label>
+                    </div>
+                    <div class="input-field">
+                        <input
+                            class="input email"
+                            type="text"
+                            name="email"
+                            required
+                            autocomplete="off"
+                        />
+                        <label for="email" class="label">E-mail (*):</label>
+                    </div>
+                    <div class="input-field">
+                        <input
+                            class="input phone"
+                            type="text"
+                            name="phone"
+                            autocomplete="off"
+                        />
+                        <label for="phone" class="label">Telefone:</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea
+                            class="textarea message"
+                            name="message"
+                            required
+                            autocomplete="off"
+                        >
+                        </textarea>
+                        <label for="message" class="label text">Sua mensagem (*):</label>
+                    </div>
+                    <div class="submit-btn">
+                        <button
+                            id="btn-sendmail"
+                            type="submit"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                        >
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="footer">
+                <footer>
+                    <div class="footer-info">
+                        <picture>
+                            <a href="/">
+                                <img
+                                    src="./src/images/logo.png"
+                                    alt="logo"
+                                    width="120px"
+                                />
+                            </a>
+                        </picture>
+                        <div class="social-medias">
+                            <a
+                                href="http://www.github.com/CaioCesarMDS"
+                                target="_blank"
+                                title="GitHub"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/caio-cesar-aa935425a/"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:caiocesarsts@gmail.com" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <span id="copy">
+                            <p>Todos os direitos reservados &copy; 2024</p>
+                        </span>
+                        <span id="me" class="text-center">
+                            <p>Desenvolvido por Caio Cesar 🚀</p>
+                        </span>
+                    </div>
+                </footer>
+            </section>
+        </main>
     </body>
 </html>
