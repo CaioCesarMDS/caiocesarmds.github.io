@@ -1,9 +1,8 @@
 .container-slider {
-    width: 20em;
+    width: 10em;
     height: 10em;
     position: relative;
     overflow: hidden;
-    margin: 1.1em 0 6em 12em;
     border-radius: 2em;
 }
 
@@ -19,8 +18,9 @@
 }
 
 .item {
-    width: 20em;
+    width: 10em;
     position: relative;
+    padding-right: 1em;
     cursor: pointer;
 }
 

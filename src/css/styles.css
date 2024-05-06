@@ -170,14 +170,15 @@ header {
 }
 
 .skills-container {
-    display: flex;
     margin-top: 4em;
+    display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 3em;
 }
 
 .skills-text {
-    width: 40%;
+    width: 70%;
 }
 
 .categories {
@@ -214,21 +215,13 @@ header {
 .skills-name {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-}
-
-.skill-name {
-    top: 0.5em;
-    text-align: center;
-}
-
-body.light .skill-name p {
-    color:var(--senary-color);
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
 }
 
 .name-container {
-    width: 12em;
-    margin: 0 4em 0 0;
+    width: 10em;
     display: block;
     background-color: #425761;
     height: 2.5em;
@@ -246,6 +239,15 @@ body.light .skill-name p {
     border-width: 10px 10px 0;
     border-style: solid;
     border-color: #425761 transparent transparent;
+}
+
+.skill-name {
+    top: 0.5em;
+    text-align: center;
+}
+
+body.light .skill-name p {
+    color:var(--senary-color);
 }
 
 .projects {

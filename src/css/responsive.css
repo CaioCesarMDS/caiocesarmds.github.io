@@ -116,7 +116,7 @@
         transform: translate(0);
     }
 
-    .menu.active .item-menu.disabled a{
+    .menu.active .item-menu.disabled a {
         transition: transform 0.9s ease;
     }
 
@@ -135,38 +135,6 @@
 
     .floating-letters {
         width: 90%;
-    }
-
-    .floating-letter {
-        display: block;
-    }
-
-    .floating-letters .name {
-        display: flex;
-        align-items: center;
-        right: 2em;
-        gap: 0.2em;
-    }
-
-    .space {
-        padding: 0.7em;
-    }
-
-    .name .point {
-        top: 1em;
-    }
-
-    .occupation {
-        display: flex;
-    }
-
-    .occupation .developer {
-        display: flex;
-        margin: 0 2em 0 8em;
-    }
-
-    .occupation .point {
-        top: 2.8em;
     }
 
     .img-home {
@@ -190,7 +158,7 @@
     }
 
     .skills {
-        padding: 0 0 0 20px;
+        padding: 0 20px 0 20px;
     }
 
     .skills-text {
@@ -199,6 +167,10 @@
 
     .skills-name {
         width: 40%;
+    }
+
+    .copyright #copy {
+        text-align: center;
     }
 }
 
@@ -216,13 +188,8 @@
         height: 300px;
     }
 
-    .occupation .developer {
-        margin: 0 2em 0 0;
-    }
-
     .slider .item img {
-        width: 120px;
-        margin-left: 7em;
+        width: 140px;
     }
 }
 
@@ -244,13 +211,101 @@
         font-size: 0.9em;
     }
 
+    .contact h2 {
+        margin-left: 1em;
+    }
+
+    .contact h3 {
+        margin-left: 1.5em;
+    }
+}
+
+@media screen and (max-width: 610px) {
     .floating-letter {
         font-size: 2.6em;
     }
 
-    .occupation .point {
-        top: 2em;
+    .skills-container {
+        flex-direction: column;
+        gap: 5em;
     }
 
+    .skills-text .paragraph {
+        width: 100%;
+    }
 
+    .img-home img {
+        width: 380px;
+    }
+
+    .img-about img {
+        width: 320px;
+    }
+
+    .project {
+        width: 400px;
+        height: 330px;
+    }
+
+    .project-img {
+        height: 250px;
+    }
+
+    .input-field {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .light-mode .icons {
+        transform: scale(1);
+    }
+
+    .mobile-menu {
+        transform: scale(0.8);
+    }
+
+    .floating-letters {
+        width: 100%;
+    }
+
+    .floating-letter {
+        font-size: 2.4em;
+    }
+
+    .img-home img {
+        width: 330px;
+    }
+
+    .img-about img {
+        width: 270px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .curriculum {
+        width: 12em;
+        padding: 0.3em 0.8em;
+    }
+
+    .project {
+        width: 350px;
+        height: 300px;
+    }
+
+    .project-img {
+        height: 220px;
+    }
+
+    .input-field {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .home {
+        padding: 0 10px 0 10px;
+    }
 }

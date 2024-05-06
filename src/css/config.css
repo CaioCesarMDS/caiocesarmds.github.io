@@ -8,13 +8,13 @@ body.light p,
 body.light h1,
 body.light h2,
 body.light h3,
-body.light .upLetter,
+body.light .floating-letter,
 body.light .menu:hover a,
 body.light .project .links-icons a {
     color: var(--secondary-color);
 }
 
-body.light .developer .upLetter,
+body.light .developer .floating-letter,
 body.light .item-menu a:hover,
 body.light .project .links-icons a:hover {
     color: var(--primary-color);
@@ -83,9 +83,3 @@ body.light .categories button:focus {
 .footer-info picture:focus-within  {
     transform: scale(1.1);
 }
-
-
-
-
-
-
